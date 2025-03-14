@@ -131,11 +131,12 @@ public class Exercicio4 {
 
 
 
+1- Solicite um valor para ser multiplicado 
+2- Calcule o valor ao quadrado e ao cubo do número digitado
+4- Mostre o resultado das multiplicações
 
-1° Solicite um valor para ser multiplicado 
-2° Multiplique o valor * valor (quadrado)
-3° Multiplique o valor * valor * valor (cubo)
-4° Mostre o resultado das multiplicações
+
+
 
 Exercicio 5
 
