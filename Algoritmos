@@ -1,14 +1,14 @@
-1- EXERCICIO
+Exercício 1
 
-package fundamentos; 
+package fundamentos;
 
-import java.util.Scanner; 
+import java.util.Scanner;
 
 public class Exercicio1 {
 	
 	/** 1. Criar um programa que leia a temperatura em Celsius e converta para Fahrenheit. */
 	
- public static void main(String[] args) { 
+	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
 		
@@ -25,39 +25,198 @@ public class Exercicio1 {
 }
 
 
-1 - Passo: Receber o dado: Solicitar ao usuário que insira a temperatura em Celsius.
-2 - Passo: Fazer a conversão: Utilizar a fórmula para transformar Celsius em Fahrenheit cuja fórmula é:  celsius * 1.8 + 32;
-3 - Passo: Imprimir o resultado: Realizar o cálculo e exibir o valor convertido.
-
-2- EXERCICIO
+1°- Solicite a temperatura em Celsius
+2°- Aplique a formula: valor solicitado * 1,8 + 32 e adicione o resultado a uma nova variavel
+3°- Mostre o resultado ao usuario
 
 
+Exercício 2
+
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+	/** 2. Criar um programa que leia a temperatura em Fahrenheit e converta para Celsius. */
+	
+	public static void main(String[] args) {
+	    
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite a temperatura em Fahrenheit: ");
+		double fahrenheit = scanner.nextDouble();
+		
+		double conversao = (fahrenheit - 32) / 1.8;
+	
+		System.out.print("Valor em Celsius: " + conversao);
+		
+		scanner.close();
+	}
+
+}
+
+
+1°- Solicite a temperatura em Fahrenheit 
+2°- Aplique a formula: (valor solicitado-32) / 1,8  e adicione o resultado a uma nova variavel
+3°- Mostre o resultado ao usuario
+
+
+Exercício 3
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+	/** 3. Criar um programa que leia o peso e a altura do usuário e imprima no console o IMC. */
+	
+	public static void main(String[] args) {
+	 
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite o peso:");
+		double peso = scanner.nextDouble();
+		
+		System.out.println("Digite a altura:");
+		double altura = scanner.nextDouble();
+		
+		double imc = peso / ( altura * altura );
+		
+		System.out.print("IMC: " + imc);
+		
+		scanner.close();
+	}
+
+}
+
+
+1° Usuário digita uma informação "peso".
+2° Usuário digita segunda informação "altura".
+3° Faz a multiplicação e divisão das informações. peso / (altura * altura).
+4° Mostra o resultado.
+
+
+Exercício 4
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+	/** 4. Criar um programa que leia um valor e apresente os resultados ao quadrado e ao cubo do valor. */
+	
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite o valor:");
+		double valor = scanner.nextDouble();
+		
+		/** Existe tamb�m a seguinte possibilidade
+		 * double quadrado = valor * valor;
+		 * double cubo = valor * valor * valor;
+		 */
+		
+		double quadrado = Math.pow(valor, 2);
+		
+		double cubo = Math.pow(valor, 3);
+		
+		System.out.print("O valor ao quadrado é: " + quadrado + "\n O valor ao cubo é: " + cubo);
+		
+		scanner.close();
+	}
+
+}
 
 
 
 
+1° Solicite um valor para ser multiplicado 
+2° Multiplique o valor * valor (quadrado)
+3° Multiplique o valor * valor * valor (cubo)
+4° Mostre o resultado das multiplicações
+
+Exercicio 5
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class Exercicio5 {
+	/** 5. Criar um programa que leia o valor da base e da altura de um triângulo e calcule a área. */
+	
+	public static void main(String[] args) {
+	   
+		Scanner scanner = new Scanner(System.in);
+	    
+		System.out.println("Digite a Base:");
+		double base = scanner.nextDouble();
+		
+		System.out.println("Digite a Altura:");
+		double altura = scanner.nextDouble();
+		
+		double area = (base * altura) / 2;
+		
+		System.out.print("A Área do Triângulo é: " + area);
+		
+		scanner.close();
+	}
+
+}
+
+
+1° Leia o valor da base de um triângulo e salve em uma variável
+2° Leia o valor da altura de um triângulo e salve em uma variável
+3° Faça a equação (base * altura) / 2 que é a equação que calcula a área de um triângulo e salve em uma variável
+4° Apresentar o resultado da equação que está na variável área. 
+
+Exercício 6
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Equação: ax² + bx + c = 0");
+		
+		System.out.println("\nDigite o valor de A: ");
+		int a = scanner.nextInt();
+
+		System.out.println("\nDigite o valor de B: ");
+		int b = scanner.nextInt();
+
+		System.out.println("\nDigite o valor de C: ");
+		int c = scanner.nextInt();
+
+		int delta = (b * b) - (4 * a * c);
+
+		System.out.printf("\nSua equação é: %dx² + %dx + %d = 0", a, b, c);
+		
+		System.out.println("\nO delta é: " + delta);
+
+		double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+
+		System.out.printf("O x1 da equação é: %.2f", x1);
+
+		double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+		System.out.printf("\nO x2 da equação é: %.2f" ,x2);
+		
+		scanner.close();
+	}
+
+}
 
 
 
-
-
-
-
-
-
-1°- solicite a temperatura em celsius
-2°- aplique a formula: valor solicitado *1,8 +32 e adicione o resultado a uma nova variavel
-3°- mostre o resultado ao usuario
-----------
-1°- solicite a temperatura em Fahrenheit 
-2°- aplique a formula: (valor solicitado-32) /1,8  e adicione o resultado a uma nova variavel
-3°- mostre o resultado ao usuario
-
-
-
-
-
-
-
-
-
+1° Leia três valores (valores inteiros)
+2° Calcule (B * B) - (4 * A * C) e salve numa variável (Fórmula para obter o delta) (resultado inteiro)
+3° Calcule (-B + raiz do delta) / 2 * A e salve numa variável (Fórmula para obter a raiz um) (resultado dobro)
+4° Calcule (-B - raiz do delta) / 2 * A e salve numa variável (Fórmula para obter a raiz dois) (resultado dobro)
+5° Apresentar na tela os valores de delta, raiz um e raiz dois.
