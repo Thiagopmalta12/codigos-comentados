@@ -1,1 +1,63 @@
+1- EXERCICIO
+
+package fundamentos; 
+
+import java.util.Scanner; 
+
+public class Exercicio1 {
+	
+	/** 1. Criar um programa que leia a temperatura em Celsius e converta para Fahrenheit. */
+	
+ public static void main(String[] args) { 
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite a temperatura em Celsius: ");
+		double celsius = scanner.nextDouble();
+		
+		double conversao = celsius * 1.8 + 32;
+		
+		System.out.print("Valor em Farenheit: " + conversao);
+		
+		scanner.close();
+	}
+
+}
+
+
+1 - Passo: Receber o dado: Solicitar ao usuário que insira a temperatura em Celsius.
+2 - Passo: Fazer a conversão: Utilizar a fórmula para transformar Celsius em Fahrenheit cuja fórmula é:  celsius * 1.8 + 32;
+3 - Passo: Imprimir o resultado: Realizar o cálculo e exibir o valor convertido.
+
+2- EXERCICIO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1°- solicite a temperatura em celsius
+2°- aplique a formula: valor solicitado *1,8 +32 e adicione o resultado a uma nova variavel
+3°- mostre o resultado ao usuario
+----------
+1°- solicite a temperatura em Fahrenheit 
+2°- aplique a formula: (valor solicitado-32) /1,8  e adicione o resultado a uma nova variavel
+3°- mostre o resultado ao usuario
+
+
+
+
+
+
+
+
 
